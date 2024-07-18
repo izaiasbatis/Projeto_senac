@@ -1,0 +1,19 @@
+<script setup>
+import { ref } from 'vue'
+
+const show = ref(true)
+const list = ref([1, 2, 3])
+</script>
+
+<template>
+  <button @click="show = !show">Alternar Lista</button>
+  <button @click="list.push(list.length + 1)">Empurrar Número</button>
+  <button @click="list.pop()">Largar Número</button>
+  <button @click="list.reverse()">Inverter Lista</button>
+
+  <ul v-if="show && list.length">
+    <li v-for="item of list">{{ item }}</li>
+  </ul>
+  <p v-else-if="list.length">A lista não está vazia, porém escondida.</p>
+  <p v-else>A lista está vazia.</p>
+</template>
