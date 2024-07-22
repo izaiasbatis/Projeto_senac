@@ -6,11 +6,11 @@ import OrdenaFiltro from '../components/OrdenaFiltro.vue'
 <template>
   <div class="about">
     <h1>Página de Exercícios!</h1> 
-    <h2>Laços de Repetição:</h2>
+    <h2>1 - Laços de Repetição:</h2>
       <main>
         <LacosRepet />
       </main>
-    <h2>Filtrar:</h2>
+    <h2>2 - Filtrar:</h2>
       <main>
         <OrdenaFiltro />
       </main>
